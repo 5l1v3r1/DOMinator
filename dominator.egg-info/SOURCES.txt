@@ -1,0 +1,10 @@
+README.md
+setup.py
+dominator/__init__.py
+dominator/__main__.py
+dominator/funcmodule.py
+dominator.egg-info/PKG-INFO
+dominator.egg-info/SOURCES.txt
+dominator.egg-info/dependency_links.txt
+dominator.egg-info/entry_points.txt
+dominator.egg-info/top_level.txt
