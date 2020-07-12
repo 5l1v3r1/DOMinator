@@ -1,9 +1,9 @@
-#Dominator Guide
+#### Dominator Guide
 
 ### finding all vulnerabilities for a target domain
 - dominator -targeturl
 
-looks for the top 10 OWASP vulnerabilities at the target url
+    #### looks for these OWASP vulnerabilities at the target url
 
     -Injection.
     -Broken Authentication.
@@ -15,8 +15,9 @@ looks for the top 10 OWASP vulnerabilities at the target url
     -Insecure Deserialization.
 
 ### finding DOM vulnerabilities for a specific URL
-- dominator -targeturl -dvul
+- dominator -dvul targeturl
 
-### finding XSS vulnerabilities for a specific URL
-- dominator -targeturl -xssvul
-"# DOMinator" 
+
+### Current status and future developments
+- dominator only works on html driven web pages, it will not work with front end frameworks (vue, react, angular etc...)
+- the error handling currently relies on a wordlist not a DB
