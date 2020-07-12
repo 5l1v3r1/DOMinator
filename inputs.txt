@@ -1,2 +1,2 @@
-type="hidden"
+hidden
 you should not have hidden inputs on the page

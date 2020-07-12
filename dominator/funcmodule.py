@@ -10,18 +10,24 @@ def dom_vulnerability_check(url,buttons,inputs):
 
     for tag in buttons:
         #print(tag)
+        tagstring = str(tag)
+
         for line in button_wordlist:
-            #print(line+'\n')
-            if line in str(tag):
-                vulns.append(line) #add the vulnerability to the list
+            print(tag)
+            print(line)  
+            if line.rstrip() in tagstring:
+                vulns.append(line.rstrip()) #add the vulnerability to the list
     
     
     for tag in inputs:
         #print(tag)
+        tagstring = str(tag)
+
         for line in input_wordlist:
-            #print(line+'\n')
-            if line in str(tag):
-                 vulns.append(line) #add the vulnerability to the list
+            print(tag)
+            print(line)
+            if line.rstrip() in tagstring:
+                 vulns.append(line.rstrip()) #add the vulnerability to the list
         
     print('vulns',vulns)
 
